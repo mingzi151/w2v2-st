@@ -1,0 +1,3 @@
+from fairseq_modules.modules.multiscale_transformer_layer import MultiScaleEncoderLayer
+from fairseq_modules.modules.multiscale_attention import MultiScaleAttention
+

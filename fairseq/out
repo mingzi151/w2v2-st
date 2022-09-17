@@ -1,0 +1,549 @@
+running build_ext
+cythoning fairseq/data/data_utils_fast.pyx to fairseq/data/data_utils_fast.cpp
+cythoning fairseq/data/token_block_utils_fast.pyx to fairseq/data/token_block_utils_fast.cpp
+building 'fairseq.libbleu' extension
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbleu
+Emitting ninja build file /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/2] g++ -MMD -MF /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbleu/module.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include -fPIC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libbleu/module.cpp -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbleu/module.o -std=c++11 -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=libbleu -D_GLIBCXX_USE_CXX11_ABI=0
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+[2/2] g++ -MMD -MF /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbleu/libbleu.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include -fPIC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libbleu/libbleu.cpp -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbleu/libbleu.o -std=c++11 -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=libbleu -D_GLIBCXX_USE_CXX11_ABI=0
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+creating build/lib.linux-x86_64-3.8
+creating build/lib.linux-x86_64-3.8/fairseq
+g++ -pthread -shared -B /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/compiler_compat -L/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,-rpath=/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,--no-as-needed -Wl,--sysroot=/ -L/usr/local/cuda/10.1/lib64/stubs -L/usr/lib64 -L/usr/local/cuda/10.1/lib64 -L/usr/local/cuda/10.1/lib -L/usr/local/gcc/6.1.0/lib64 -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbleu/libbleu.o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbleu/module.o -o build/lib.linux-x86_64-3.8/fairseq/libbleu.cpython-38-x86_64-linux-gnu.so
+building 'fairseq.data.data_utils_fast' extension
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/data
+Emitting ninja build file /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/1] g++ -MMD -MF /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/data/data_utils_fast.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include -fPIC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/data/data_utils_fast.cpp -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/data/data_utils_fast.o -std=c++11 -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=data_utils_fast -D_GLIBCXX_USE_CXX11_ABI=0
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h:1822:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/data/data_utils_fast.cpp:626:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+ #warning "Using deprecated NumPy API, disable it with " \
+  ^~~~~~~
+creating build/lib.linux-x86_64-3.8/fairseq/data
+g++ -pthread -shared -B /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/compiler_compat -L/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,-rpath=/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,--no-as-needed -Wl,--sysroot=/ -L/usr/local/cuda/10.1/lib64/stubs -L/usr/lib64 -L/usr/local/cuda/10.1/lib64 -L/usr/local/cuda/10.1/lib -L/usr/local/gcc/6.1.0/lib64 -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/data/data_utils_fast.o -o build/lib.linux-x86_64-3.8/fairseq/data/data_utils_fast.cpython-38-x86_64-linux-gnu.so
+building 'fairseq.data.token_block_utils_fast' extension
+Emitting ninja build file /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/1] g++ -MMD -MF /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/data/token_block_utils_fast.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include -fPIC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/data/token_block_utils_fast.cpp -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/data/token_block_utils_fast.o -std=c++11 -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=token_block_utils_fast -D_GLIBCXX_USE_CXX11_ABI=0
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h:1822:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/data/token_block_utils_fast.cpp:627:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+ #warning "Using deprecated NumPy API, disable it with " \
+  ^~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/data/token_block_utils_fast.cpp: In function ‘PyArrayObject* __pyx_f_7fairseq_4data_22token_block_utils_fast__get_slice_indices_fast(PyArrayObject*, PyObject*, int, int, int)’:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/data/token_block_utils_fast.cpp:3297:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       __pyx_t_4 = ((__pyx_v_sz_idx < __pyx_t_10) != 0);
+                     ~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/data/token_block_utils_fast.cpp:3492:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       __pyx_t_3 = ((__pyx_v_sz_idx < __pyx_t_10) != 0);
+                     ~~~~~~~~~~~~~~~^~~~~~~~~~~~
+g++ -pthread -shared -B /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/compiler_compat -L/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,-rpath=/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,--no-as-needed -Wl,--sysroot=/ -L/usr/local/cuda/10.1/lib64/stubs -L/usr/lib64 -L/usr/local/cuda/10.1/lib64 -L/usr/local/cuda/10.1/lib -L/usr/local/gcc/6.1.0/lib64 -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/data/token_block_utils_fast.o -o build/lib.linux-x86_64-3.8/fairseq/data/token_block_utils_fast.cpython-38-x86_64-linux-gnu.so
+building 'fairseq.libbase' extension
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbase
+Emitting ninja build file /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/1] g++ -MMD -MF /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbase/balanced_assignment.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include -fPIC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/TH -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/THC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libbase/balanced_assignment.cpp -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbase/balanced_assignment.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=libbase -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:140:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:13,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libbase/balanced_assignment.cpp:15:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:83:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+g++ -pthread -shared -B /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/compiler_compat -L/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,-rpath=/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,--no-as-needed -Wl,--sysroot=/ -L/usr/local/cuda/10.1/lib64/stubs -L/usr/lib64 -L/usr/local/cuda/10.1/lib64 -L/usr/local/cuda/10.1/lib -L/usr/local/gcc/6.1.0/lib64 -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libbase/balanced_assignment.o -L/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -o build/lib.linux-x86_64-3.8/fairseq/libbase.cpython-38-x86_64-linux-gnu.so
+building 'fairseq.libnat' extension
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat
+Emitting ninja build file /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/1] g++ -MMD -MF /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat/edit_dist.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include -fPIC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/TH -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/THC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat/edit_dist.cpp -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat/edit_dist.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=libnat -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:140:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:13,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat/edit_dist.cpp:9:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:83:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+g++ -pthread -shared -B /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/compiler_compat -L/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,-rpath=/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib -Wl,--no-as-needed -Wl,--sysroot=/ -L/usr/local/cuda/10.1/lib64/stubs -L/usr/lib64 -L/usr/local/cuda/10.1/lib64 -L/usr/local/cuda/10.1/lib -L/usr/local/gcc/6.1.0/lib64 -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat/edit_dist.o -L/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -o build/lib.linux-x86_64-3.8/fairseq/libnat.cpython-38-x86_64-linux-gnu.so
+building 'fairseq.libnat_cuda' extension
+creating /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat_cuda
+Emitting ninja build file /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/2] /usr/local/cuda/10.1/bin/nvcc --generate-dependencies-with-compile --dependency-output /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat_cuda/edit_dist.o.d -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/TH -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/THC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.cu -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat_cuda/edit_dist.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=libnat_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_70,code=compute_70 -gencode=arch=compute_70,code=sm_70 -ccbin gcc -std=c++14
+FAILED: /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat_cuda/edit_dist.o 
+/usr/local/cuda/10.1/bin/nvcc --generate-dependencies-with-compile --dependency-output /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat_cuda/edit_dist.o.d -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/TH -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/THC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.cu -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat_cuda/edit_dist.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=libnat_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_70,code=compute_70 -gencode=arch=compute_70,code=sm_70 -ccbin gcc -std=c++14
+nvcc fatal   : Unknown option '-generate-dependencies-with-compile'
+[2/2] g++ -MMD -MF /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat_cuda/binding.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/usr/local/gcc/6.1.0/include -I/usr/local/cuda/10.1/include/CL -I/usr/local/cuda/10.1/include -I/usr/local/gcc/6.1.0/include/c++/6.1.0/x86_64-unknown-linux-gnu/ -I/usr/local/gcc/6.1.0/include -fPIC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/TH -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/THC -I/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/include/python3.8 -c -c /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp -o /fs03/da33/jinming/iwslt-2021/fairseq/build/temp.linux-x86_64-3.8/fairseq/clib/libnat_cuda/binding.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=libnat_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:140:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:13,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:83:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp: In function ‘at::Tensor LevenshteinDistance(at::Tensor, at::Tensor, at::Tensor, at::Tensor)’:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:42: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                                          ^
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:173:65: note: in definition of macro ‘C10_UNLIKELY’
+ #define C10_UNLIKELY(expr)  (__builtin_expect(static_cast<bool>(expr), 0))
+                                                                 ^~~~
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:362:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                 \
+       ^~~~~~~~~~~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:23: note: in expansion of macro ‘TORCH_CHECK’
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                       ^~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:22:24: note: in expansion of macro ‘CHECK_CUDA’
+ #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+                        ^~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:31:5: note: in expansion of macro ‘CHECK_INPUT’
+     CHECK_INPUT(source);
+     ^
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:303:30: note: declared here
+   DeprecatedTypeProperties & type() const {
+                              ^~~~
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:42: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                                          ^
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:173:65: note: in definition of macro ‘C10_UNLIKELY’
+ #define C10_UNLIKELY(expr)  (__builtin_expect(static_cast<bool>(expr), 0))
+                                                                 ^~~~
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:362:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                 \
+       ^~~~~~~~~~~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:23: note: in expansion of macro ‘TORCH_CHECK’
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                       ^~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:22:24: note: in expansion of macro ‘CHECK_CUDA’
+ #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+                        ^~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:32:5: note: in expansion of macro ‘CHECK_INPUT’
+     CHECK_INPUT(target);
+     ^
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:303:30: note: declared here
+   DeprecatedTypeProperties & type() const {
+                              ^~~~
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:42: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                                          ^
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:173:65: note: in definition of macro ‘C10_UNLIKELY’
+ #define C10_UNLIKELY(expr)  (__builtin_expect(static_cast<bool>(expr), 0))
+                                                                 ^~~~
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:362:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                 \
+       ^~~~~~~~~~~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:23: note: in expansion of macro ‘TORCH_CHECK’
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                       ^~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:22:24: note: in expansion of macro ‘CHECK_CUDA’
+ #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+                        ^~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:33:5: note: in expansion of macro ‘CHECK_INPUT’
+     CHECK_INPUT(source_length);
+     ^
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:303:30: note: declared here
+   DeprecatedTypeProperties & type() const {
+                              ^~~~
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:42: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                                          ^
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:173:65: note: in definition of macro ‘C10_UNLIKELY’
+ #define C10_UNLIKELY(expr)  (__builtin_expect(static_cast<bool>(expr), 0))
+                                                                 ^~~~
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:362:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                 \
+       ^~~~~~~~~~~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:23: note: in expansion of macro ‘TORCH_CHECK’
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                       ^~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:22:24: note: in expansion of macro ‘CHECK_CUDA’
+ #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+                        ^~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:34:5: note: in expansion of macro ‘CHECK_INPUT’
+     CHECK_INPUT(target_length);
+     ^
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:303:30: note: declared here
+   DeprecatedTypeProperties & type() const {
+                              ^~~~
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp: In function ‘at::Tensor GenerateDeletionLabel(at::Tensor, at::Tensor)’:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:42: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                                          ^
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:173:65: note: in definition of macro ‘C10_UNLIKELY’
+ #define C10_UNLIKELY(expr)  (__builtin_expect(static_cast<bool>(expr), 0))
+                                                                 ^~~~
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:362:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                 \
+       ^~~~~~~~~~~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:23: note: in expansion of macro ‘TORCH_CHECK’
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                       ^~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:22:24: note: in expansion of macro ‘CHECK_CUDA’
+ #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+                        ^~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:42:5: note: in expansion of macro ‘CHECK_INPUT’
+     CHECK_INPUT(source);
+     ^
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:303:30: note: declared here
+   DeprecatedTypeProperties & type() const {
+                              ^~~~
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:42: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                                          ^
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:173:65: note: in definition of macro ‘C10_UNLIKELY’
+ #define C10_UNLIKELY(expr)  (__builtin_expect(static_cast<bool>(expr), 0))
+                                                                 ^~~~
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:362:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                 \
+       ^~~~~~~~~~~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:23: note: in expansion of macro ‘TORCH_CHECK’
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                       ^~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:22:24: note: in expansion of macro ‘CHECK_CUDA’
+ #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+                        ^~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:43:5: note: in expansion of macro ‘CHECK_INPUT’
+     CHECK_INPUT(operations);
+     ^
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:303:30: note: declared here
+   DeprecatedTypeProperties & type() const {
+                              ^~~~
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp: In function ‘std::pair<at::Tensor, at::Tensor> GenerateInsertionLabel(at::Tensor, at::Tensor)’:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:42: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                                          ^
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:173:65: note: in definition of macro ‘C10_UNLIKELY’
+ #define C10_UNLIKELY(expr)  (__builtin_expect(static_cast<bool>(expr), 0))
+                                                                 ^~~~
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:362:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                 \
+       ^~~~~~~~~~~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:23: note: in expansion of macro ‘TORCH_CHECK’
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                       ^~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:22:24: note: in expansion of macro ‘CHECK_CUDA’
+ #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+                        ^~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:51:5: note: in expansion of macro ‘CHECK_INPUT’
+     CHECK_INPUT(target);
+     ^
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:303:30: note: declared here
+   DeprecatedTypeProperties & type() const {
+                              ^~~~
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:42: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                                          ^
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:173:65: note: in definition of macro ‘C10_UNLIKELY’
+ #define C10_UNLIKELY(expr)  (__builtin_expect(static_cast<bool>(expr), 0))
+                                                                 ^~~~
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:362:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                 \
+       ^~~~~~~~~~~~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:20:23: note: in expansion of macro ‘TORCH_CHECK’
+ #define CHECK_CUDA(x) TORCH_CHECK(x.type().is_cuda(), #x " must be a CUDA tensor")
+                       ^~~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:22:24: note: in expansion of macro ‘CHECK_CUDA’
+ #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+                        ^~~~~~~~~~
+/fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:52:5: note: in expansion of macro ‘CHECK_INPUT’
+     CHECK_INPUT(operations);
+     ^
+In file included from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3:0,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                 from /home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/edit_dist.h:11,
+                 from /fs03/da33/jinming/iwslt-2021/fairseq/fairseq/clib/libnat_cuda/binding.cpp:13:
+/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:303:30: note: declared here
+   DeprecatedTypeProperties & type() const {
+                              ^~~~
+ninja: build stopped: subcommand failed.
+Traceback (most recent call last):
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1667, in _run_ninja_build
+    subprocess.run(
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/subprocess.py", line 512, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "setup.py", line 268, in <module>
+    do_setup(package_data)
+  File "setup.py", line 179, in do_setup
+    setup(
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/setuptools/__init__.py", line 153, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/distutils/core.py", line 148, in setup
+    dist.run_commands()
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/distutils/dist.py", line 966, in run_commands
+    self.run_command(cmd)
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 79, in run
+    _build_ext.run(self)
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/Cython/Distutils/old_build_ext.py", line 186, in run
+    _build_ext.build_ext.run(self)
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/distutils/command/build_ext.py", line 340, in run
+    self.build_extensions()
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 708, in build_extensions
+    build_ext.build_extensions(self)
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/Cython/Distutils/old_build_ext.py", line 195, in build_extensions
+    _build_ext.build_ext.build_extensions(self)
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/distutils/command/build_ext.py", line 449, in build_extensions
+    self._build_extensions_serial()
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/distutils/command/build_ext.py", line 474, in _build_extensions_serial
+    self.build_extension(ext)
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 196, in build_extension
+    _build_ext.build_extension(self, ext)
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/distutils/command/build_ext.py", line 528, in build_extension
+    objects = self.compiler.compile(sources,
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 529, in unix_wrap_ninja_compile
+    _write_ninja_file_and_compile_objects(
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1354, in _write_ninja_file_and_compile_objects
+    _run_ninja_build(
+  File "/home/jinmingz/da33_scratch/jinming/conda_envs/conda/envs/iwslt21/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1683, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error compiling objects for extension
